@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <img class="grad" src="./icons/grad.png" alt="Gradient">
     <header class="header">
 
         <section class="header-plain_text">
-            <span style="color: #FB9333;">JEZ</span> SALAD
+            <b style="color: black;"><span style="color: #FB9333;">JEZ</span> SALAD</b>
         </section>
+        
+        
             
 
         <nav class="header-nav">
@@ -22,7 +25,7 @@
             <a class="header-link" href="#">About Us</a>
 
         </nav>
-        <button class="header-signIn">Sign</button>
+        <button class="header-signIn"><b>Sign</b></button>
 
     </header>
 
@@ -34,7 +37,7 @@
             <section class="banner">
 
                 <section class="main-chant">
-                    <span style="color: #FB9333;">1# Very nice!</span>
+                    <span style="color: #FB9333;">1# Very nice salad!</span>
                 </section>
 
                 <div>
@@ -71,29 +74,31 @@
             <!-- Right Section (Image + Info) -->
             <aside class="header-aside">
                 <img class="header-aside--logo" src="./icons/header/front_lady.png" alt="Logo"/>
+                <img class="heart" src="./icons/header/heart.png" alt="Heart" />
         
                 <div class="header-aside-info">
                     <img class="header-aside-logo" src="./icons/header/happy1.png" alt="Happy Customer"/>
-                    <h4>Our Happy Customer</h4>
-                    <div>
-                        <img src="./icons/header/star.png" alt="Star Rating"/>
-                        <span><b>4.9</b> (2,000 Reviews)</span>
+                    <div class="happy-info">
+                        <h4>Our Happy Customer</h4>
+                        <div>
+                            <img src="./icons/header/star.png" alt="Star Rating"/>
+                            <span><b>4.9</b> (2,000 Reviews)</span>
+                    </div>
                     </div>
                 </div>
         
                 <div class="header-aside-calories">
-                    <span>Daily Calories</span>
+                    <span class="header-aside-calories-sp">Daily Calories</span>
                     <span class="header-aside-calories-number">321 Cal</span>
         
-                    <div class="header-aside-calories-progress">
-                        <progress class="calorie-progress" value="40" max="100"></progress>
-                        <progress class="calorie-progress" value="55" max="100"></progress>
-                        <progress class="calorie-progress" value="60" max="100"></progress>
-                        <progress class="calorie-progress" value="69" max="100"></progress>
-                        <progress class="calorie-progress" value="50" max="100"></progress>
-                        <progress class="calorie-progress" value="70" max="100"></progress>
-                        <progress class="calorie-progress" value="80" max="100"></progress>
-                        <progress class="calorie-progress" value="90" max="100"></progress>
+                    <div class="chart">
+                        <div class="bar-container"><div class="bar" style="height: 20%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 40%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 50%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 70%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 80%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 90%;"></div></div>
+                        <div class="bar-container"><div class="bar" style="height: 100%;"></div></div>
                     </div>
                 </div>
             </aside>
@@ -111,7 +116,7 @@
                 <article class="we_provide-service">
                     <img class="we_provide-service-img" src="./icons/we_provide/we_provide_article1.png" alt="Service"/>
                     <h2>Own fruit orchard</h2>
-                    <p>Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang memiliki cabang toko Jez Salad.</p>
+                    <p>Langsung dari Kebun Sendiri<br> yang tersebar di setiap provinsi<br> yang memiliki cabang<br> toko Jez Salad.</p>
                     <button class="we_provide-service-button">Learn more →</button>
                 </article>
         
@@ -125,7 +130,7 @@
                 <article class="we_provide-service">
                     <img class="we_provide-service-img" src="./icons/we_provide/we_provide_article3.png" alt="Service"/>
                     <h2>100 Top Brand</h2>
-                    <p>We are one of the best brands in the Food and Beverage sector in Indonesia.</p>
+                    <p>We are one of the best<br> brands in the Food<br> and Beverage sector<br> in Indonesia.</p>
                     <button class="we_provide-service-button">Learn more →</button>
                 </article>
             </div>
@@ -210,7 +215,7 @@
 
 
                 <article class="listings-product-case">
-                    <img class="listings-product-case-image" src="./icons/listings/product3.png" alt="Product"/>
+                    <img class="listings-product-case-image" src="./icons/listings/product2.png" alt="Product"/>
                     <h4>Salad Yummy Red</h4>
                     <h2>$ 12.99</h2>
                 </article>
@@ -231,11 +236,13 @@
             </header>
 
             <form onsubmit="yourOnSubmitFunc()">
-                <input type="text" id="email" value="Enter your email address"><br>
+                <input type="text" id="email" value="Enter your email address" ><br>
                 <button onclick="yourOnSubmitFunc()">
-               Submit
+               Subscribe
                 </button>
            </form>
+
+           <img class="subscription-image" src="./icons/subscribe/image.png"/> 
 
 
         </section>
